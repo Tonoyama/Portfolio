@@ -1,0 +1,23 @@
+App-body {
+    text-align: center
+}
+
+img {
+    margin: 2em;
+}
+
+.Bold-font {
+    color: #3f3f3f;
+    font-weight: bold;
+    font-size: calc(10px + 2vmin);
+}
+
+.icon-twitter {
+    width: 8em;
+    height: 8em;
+}
+
+.icon-github {
+    width: 8em;
+    height: 8em;
+}

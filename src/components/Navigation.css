@@ -1,0 +1,28 @@
+.Button a {
+    text-decoration: none;
+    color: #3f3f3f;
+    width: 150px;
+    padding: 0.5em 1em 0.5em 1em;
+    display: inline-block;
+    border-radius: 10px;
+    background:  rgba(255, 255, 255, 0.8);
+    box-shadow:  -6px 6px 12px	rgba(210, 210, 210, 0.5),
+                6px -6px 12px rgba(245, 245, 245, 0.8);
+    margin: 1em 2em 1em 2em;
+}
+
+.Button a:hover {
+    text-decoration: none;
+    color: #3f3f3f;
+}
+
+.Button a.active {
+    color: #3f3f3f;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 3px solid #f1f1f1;
+    box-shadow: 3px 3px 10px rgba(210, 210, 210, 0.6), -3px -3px 10px rgba(245, 245, 245, 0.8),
+    inset 3px 3px 5px rgba(210, 210, 210, 0.8), inset -3px -2px 7px rgba(245, 245, 245, 0.8);
+    cursor: pointer;
+}

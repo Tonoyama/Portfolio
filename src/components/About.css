@@ -1,0 +1,28 @@
+.App-body {
+    min-height: 100vh;
+}
+
+.tabs li {
+    list-style: none;
+    text-align: center;
+    color: #3f3f3f;
+    width: 120px;
+    padding: 0.5em 1em;
+    display: inline-block;
+    border-radius: 10px;
+    background:  rgba(255, 255, 255, 0.8);
+    box-shadow:  -6px 6px 12px	rgba(210, 210, 210, 0.5),
+                6px -6px 12px rgba(245, 245, 245, 0.8);
+    margin-right: 3em;
+}
+
+.tabs li.active {
+    color: #3f3f3f;
+    font-weight: bold;
+    width: 120px;
+    border-radius: 15px;
+    border: 3px solid #f1f1f1;
+    box-shadow: 5px 5px 10px rgba(210, 210, 210, 0.6), -5px -5px 10px rgba(245, 245, 245, 0.8),
+    inset 3px 3px 5px rgba(210, 210, 210, 0.8), inset -3px -3px 5px rgba(245, 245, 245, 0.8);
+    cursor: pointer;
+}
