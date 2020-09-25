@@ -20,6 +20,13 @@
     text-align: center;
 }
 
+.title {
+    text-align: left;
+    padding-top: 2em;
+    font-weight: bold;
+    font-size: 15;
+}
+
 .Comment {
     padding-top: 2em;
     text-align: left;

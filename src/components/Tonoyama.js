@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card/Card.js'
+import Card from './Card/Tonoyama_Card.js'
 
 const Tonoyama = () => {
 

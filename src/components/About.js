@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
-import "./About.css";
+import './About.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartBar } from "@fortawesome/free-solid-svg-icons";
 import { faNetworkWired } from "@fortawesome/free-solid-svg-icons";
 import { faSmile } from "@fortawesome/free-solid-svg-icons";
+import AboutOther from './Card/Card.js'
+import portfolio from './images/portfolio.png'
+import maskdetection from './images/maskdetection.jpg'
+import haikupic from './images/haiku.png'
+import opencloudmedical from './images/opencloudmedical.jpg'
+import MediaQuery from 'react-responsive'
 
 const TAB_TYPES = {
     HOME: "home",
@@ -96,31 +102,32 @@ const About = () => {
 
     return (
         <App>
-            <App.Tabs />
-            <div className="contents">
+            <MediaQuery query="(min-width: 768px)">
+                <App.Tabs />
                 <App.Home>
-                    <div className="Sidenav">
-                        <div>
-                            <span className="Bold-font">I'm Tonoyama</span><span className="Light-font"> yudai</span>
-                        </div>
-                    </div>
-                    <div className="Comment">
-                        <p>今日も１日頑張るぞい╭( ･ㅂ･)و</p>
-                        <br />
-                        <p>
-                            殿山 雄大と申します。大阪のとある大学の情報工学科 学部１年です。
-                        </p>
-                        <p>
-                            クラウドコンピューティング、Web 開発、機械学習に興味があります。
-                        </p>
-                        <p>現在、京都のWeb系自社開発企業でアルバイトしていて、
-                        主に JavaScript を使った開発やテストを行っています。
-                        </p>
-                    </div>
+                    <AboutOther img={portfolio} title="ポートフォリオサイト" comment="React を使った SPA(Single Page Application) です。ホスティングに AWS Amplify を使用し迅速なデプロイを実現しました。" />
                 </App.Home>
-                <App.About>Aboutの時の中身</App.About>
-                <App.Works>worksの時の中身</App.Works>
-            </div>
+                <App.About>
+                    <AboutOther img={maskdetection} title="マスク非着用者検出 AI" comment="学習済みモデルを基に OpenCV で、マスク非着用者を検出する機能を短期間で実装しました。その結果、大学のオープンキャンパスの展示物として、全国版の朝日新聞と読売新聞に掲載されました。" />
+                    <AboutOther img={haikupic} title="俳句自動生成 AI" comment="高校時代、俳句部に所属していたため、AI に俳句を創れるのか？という疑問が生まれ作りました。現代俳句協会様から頂いた俳句 39,000 件を基に深層学習(Transformer)で学習、生成しました。" />
+                </App.About>
+                <App.Works>
+                    <AboutOther img={opencloudmedical} title="OpenCloudMedical" comment="高校生の時に、実家の医療会計・受付システムを構築しました。その経験を基に Docker コンテナ版の OSS「OpenCloudMedical」を開発しました。" />
+                </App.Works>
+            </MediaQuery>
+            <MediaQuery query="(min-width: 1100px)">
+                <App.Tabs />
+                <App.Home>
+                    <AboutOther img={portfolio} title="ポートフォリオサイト" comment="React を使った SPA(Single Page Application) です。ホスティングに AWS Amplify を使用し迅速なデプロイを実現しました。" />
+                </App.Home>
+                <App.About>
+                    <AboutOther img={maskdetection} title="マスク非着用者検出 AI" comment="学習済みモデルを基に OpenCV で、マスク非着用者を検出する機能を短期間で実装しました。その結果、大学のオープンキャンパスの展示物として、全国版の朝日新聞と読売新聞に掲載されました。" />
+                    <AboutOther img={haikupic} title="俳句自動生成 AI" comment="高校時代、俳句部に所属していたため、AI に俳句を創れるのか？という疑問が生まれ作りました。現代俳句協会様から頂いた俳句 39,000 件を基に深層学習(Transformer)で学習、生成しました。" />
+                </App.About>
+                <App.Works>
+                    <AboutOther img={opencloudmedical} title="OpenCloudMedical" comment="高校生の時に、実家の医療会計・受付システムを構築しました。その経験を基に Docker コンテナ版の OSS「OpenCloudMedical」を開発しました。" />
+                </App.Works>
+            </MediaQuery>
         </App>
     );
 }
