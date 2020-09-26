@@ -1,7 +1,7 @@
 import React from 'react';
 import './assets/styles/Contact.css';
-import Twitter from './images/icons/Twitter_Icon.png';
-import Github from './images/icons/GitHub-Mark.png';
+import Twitter from './assets/images/icons/Twitter_Icon.png';
+import Github from './assets/images/icons/GitHub-Mark.png';
 import MediaQuery from 'react-responsive'
 import Menu from './Menu.js'
 
