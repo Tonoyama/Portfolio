@@ -1,7 +1,7 @@
 import React from 'react';
-import './Card.css'
+import '../assets/styles/Card.css'
 import Clock from '../Clock.js'
-import tonoyama from '../images/tonoyama.jpg'
+import tonoyama from '../assets/images/tonoyama.jpg'
 
 class Card extends React.Component {
     render() {
